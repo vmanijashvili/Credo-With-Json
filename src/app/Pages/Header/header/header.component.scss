@@ -1,0 +1,157 @@
+.header-basic-container{
+    width: 100%;
+    height: 5.6rem; //64px
+    display: flex;
+    align-items: center;
+    padding: 0 3%;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.image-credo{
+    width: 262px;
+    height: 41px;
+}
+.number{
+    display: flex;
+    align-items: center;
+    gap: 1.56em; // 25px;
+    img{
+        height: 18px;
+        width: 17px;
+    }
+}
+.header-li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5em;
+    color: #747474;
+    font-size: 1rem;
+    font-family: "BPG WEB 001 Caps", sans-serif;
+}
+
+.hov:hover{
+    color: #ea4b37;
+    cursor: pointer;
+   .onColor{
+    filter: invert(40%) sepia(65%) saturate(1042%) hue-rotate(329deg) brightness(91%) contrast(102%);}
+
+}
+.eng:hover{
+    color: #ea4b37;
+}
+
+.header-nav{
+    display: flex;
+
+}
+.languages{
+   display: grid;
+   gap: 0.6rem;
+   grid-template-columns: repeat(2, 1fr);
+   
+}
+.lang.geo{
+    color:  #ea4b37;
+    border: 2px solid  #ea4b37;
+}
+.lang{
+    color: #747474;
+    font-family: 'Poppins', sans-serif;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.internetbank{
+    background-color: #00609c;
+    border-radius: 25px;
+    height: 2.81rem;
+    width: 12.6rem;
+    margin: auto;
+    cursor: pointer;
+  display:grid;
+  align-items: center;
+  padding: 14px 1rem;
+
+}
+.child-internetbank{
+    display: flex;
+    gap: 10px;
+    height: 1.1rem;
+    width: 8.8rem;
+a{
+    font-size: 15.3px;
+    //font-size: 0.9em;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 1.1rem;
+
+}
+}
+
+
+
+// ქვედა ჰედერი
+
+.primary-menu{
+    height: 3.8rem;
+    width: 100%;
+    background: #ea4b37;
+    Position: Relative;
+    
+}
+
+.nav-primary{
+    height: 100%;
+    padding: 0 11.3%;
+    display: flex;
+}
+.navigation-ul{
+    display: flex;
+    height: 100%;
+    padding: 0;
+}
+.nav-li{
+    height: auto;
+}
+.nav-a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #fff;
+    padding: 0 3.5em;
+    align-items: center;
+    font-family: "BPG WEB 001 Caps", sans-serif;
+    font-size: 1em;
+}
+.nav-a:hover{
+    background-color: white;
+    color: #ea4b37;
+    cursor: default;
+}
+.nav-a.pointer:hover{
+    background-color: white;
+    color: #ea4b37;
+    cursor: pointer;
+}
+
+  .content ul{
+    display: none;
+  }
+  .content:hover ul {
+    display: block;
+    position: absolute;
+    background-color: #747474;
+    width: 77.41%;
+    height: 600px;
+    border-radius: 0 0 13px 13px;
+    z-index: 9;
+    
+  }
+
+  //right-nav-container
+
+
+ 
+

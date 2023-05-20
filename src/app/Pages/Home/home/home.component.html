@@ -1,0 +1,20 @@
+<div class="basic-container">
+    <div class="credoTop">
+        <img src="../../../../assets/credoImage.png" alt="credo">
+    </div>
+    
+    <ng-container *ngIf="(mainPageData$ | async) as mainPageData">
+        <div class="basic-list">
+            <div class="list-items">
+                
+                    <a class="item"  *ngFor="let items of mainPageData.data">   
+                        <img class="little-img" src="{{items.img}}" alt="image">
+                        <h3 class="description">{{items.description}}</h3>
+                    </a> 
+                
+            </div>
+        </div>
+    </ng-container>
+</div>
+
+<div class="testt"></div>

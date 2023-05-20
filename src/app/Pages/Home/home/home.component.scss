@@ -1,0 +1,74 @@
+/*.basic-container{
+    padding-top: 9.4rem;
+}*/
+.credoTop{
+    img{
+        width: 100%;
+    } 
+}
+.basic-list{
+    padding: 0 11.3%;
+    margin-top: 1.5rem;
+}
+.list-items{
+    display: flex;
+    gap: 1.4rem;
+    font-size: 0.9em;
+    justify-content: space-between;
+    
+}
+.item{
+    width: calc((100% - 8.125em)/5);
+    background-color: white;
+    padding-top: calc((100% - 8.125em)/5);
+    position: relative;
+    border-radius: 1.2em;
+    cursor: pointer;
+    
+    
+    .little-img{
+
+        position: absolute;
+        //max-height: 4em;
+        //max-width: 4em;
+        top: 30%;
+        left: 37.35%;
+        min-height: 3.5em; 
+        color: blue;
+    }
+    
+    
+}
+.description{ 
+
+    position: absolute;
+    top: calc(35% + 4em);
+    width: 100%;
+    padding: 0 1em;
+    text-align: center;
+    font-size: 1.1em;
+    color: #00609c;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+   
+}
+.item:hover {
+    background: #ea4b37; 
+    color: white;
+    .description{
+        color: white;
+    }
+    .little-img{
+        filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    }
+}
+
+/*.item:hover{
+    filter: invert(55%) sepia(100%) saturate(2819%) hue-rotate(342deg) brightness(97%) contrast(89%);
+}*/
+
+
+.testt{
+    height: 800px;
+    background-color: #ea4b37;
+}
