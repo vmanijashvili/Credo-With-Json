@@ -12,11 +12,6 @@ export class HomePgService {
   constructor(private _http: HttpClient) { }
 
   getMain(): Observable<CredoInterface >{
-    return this._http.get<CredoInterface>(`assets/main.json`).pipe(
-      map((res: any) =>{
-        console.log(res);
-        return res;
-      })
-    )
+    return this._http.get<CredoInterface>(`assets/main.json`)
   };
 }

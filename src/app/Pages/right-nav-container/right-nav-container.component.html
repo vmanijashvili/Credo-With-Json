@@ -1,47 +1,33 @@
 <div class="right-nav-container">
     <div class="nav">
         <div class="item">
-            <a class="flex-wrap">
+            <ng-container *ngIf="(rightNavigation$ | async) as rightNavigation ">
+
+            <a class="flex-wrap" *ngFor="let nav of rightNavigation.rightContainer">
                 <div class="icon">
-                    <img src="../../../assets/email2.svg" alt="">
+                    <img [src]="nav.img" alt="imgNavigation">
                 </div>
                 <div class="text">
-                    <span>kakha</span>
+                    <span>{{nav.description}}</span>
                 </div>
             </a> 
+            </ng-container>
         </div>
-        <div class="item">
-            <a>
-                <div class="icon"></div>
-                <div class="text">
-                    <span></span>
-                </div>
-            </a> 
-        </div>
-        <div class="item">
-            <a>
-                <div class="icon"></div>
-                <div class="text">
-                    <span></span>
-                </div>
-            </a> 
-        </div>
+        
     </div>
+   
     <div class="wright">
         <div class="item">
-            <a>
-                <div class="icon"></div>
+            
+            <a class="flex" >
+                <div class="icon">
+                    <img src="" alt="">
+                </div>
                 <div class="text">
                     <span></span>
                 </div>
             </a> 
+        
         </div>
     </div>
 </div>
-<!--
-    <a>
-    <div class="icon"></div>
-    <div class="text"></div>
-</a> 
-
--->
