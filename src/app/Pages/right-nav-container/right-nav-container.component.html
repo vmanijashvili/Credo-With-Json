@@ -1,9 +1,9 @@
 <div class="right-nav-container">
     <div class="nav">
         <div class="item">
-            <ng-container *ngIf="(rightNavigation$ | async) as rightNavigation ">
+            <ng-container *ngIf="rightNavigation">
 
-            <a class="flex-wrap" *ngFor="let nav of rightNavigation.rightContainer">
+            <a class="flex-wrap vertical-center" *ngFor="let nav of rightNavigation.rightContainer">
                 <div class="icon">
                     <img [src]="nav.img" alt="imgNavigation">
                 </div>
@@ -17,17 +17,17 @@
     </div>
    
     <div class="wright">
-        <div class="item">
-            
-            <a class="flex" >
+        <div class="item-chat">
+        <ng-container *ngIf="rightNavigation">
+            <a class="flex-wrap" *ngFor="let el of rightNavigation.rightContainerSecond" >
                 <div class="icon">
-                    <img src="" alt="">
+                    <img [src]="el.img" alt="">
                 </div>
                 <div class="text">
-                    <span></span>
+                    <span>{{el.description}}</span>
                 </div>
             </a> 
-        
+        </ng-container>
         </div>
     </div>
 </div>

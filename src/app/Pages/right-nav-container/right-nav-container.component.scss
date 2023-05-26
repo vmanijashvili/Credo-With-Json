@@ -1,40 +1,38 @@
 .right-nav-container{
   display: flex;
-  flex-direction: column;
+  //flex-direction: column;
   width: 4.5rem;
   height: 15.625em;
-  background-color: #00609c;
   position: fixed;
   right: 0;
+  background-color: #00609c;
   top: calc(45% - 6.5625em);
   z-index: 99;
   border-radius: 1.2em 0 0 1.2em;
   overflow: hidden;
   transition-duration: 0.3s;
+  //justify-content: space-evenly;
+  flex-wrap: wrap
   
 }
 .right-nav-container:hover{
   width: 16em;
   height: 15.625em;
+  
 }
   .nav{
     width: 100%;
-    height: 11.325em;
-   
-    padding-top: 1.2em;
-    //flex-direction: column;
+    height: 10.5rem; // 11.325em;
+    display: flex;
+    padding-top: 3px;
+    flex-wrap: wrap;
+    align-items: center;
     
-
-    //align-items: center;
-    //padding-top: 0.3em;
   }
   
 
 
-.item {
-  width: 16em;
-  letter-spacing: 0.7px;
-}
+
 .text{
   color: #fff;
   cursor: pointer;
@@ -42,36 +40,51 @@
 
 .flex-wrap{
   color: #fff;
-  height: 3.8em;
+  //height: 3.8em;
   display: flex;
-  text-align: center;
-  //align-items: center;
-  //ap: 1.1rem;
-  //flex-wrap: wrap;
   
+  
+}
+.vertical-center{
+  align-items: center;
+  height: 3.5rem;
 }
 .icon{
   width: 5em;
   text-align: center;
   cursor: pointer;
-  img{
-    width: 1.8rem;
-    //height: 1.4rem;
-
-  }
 }
-
+img{
+  width: 1.8rem;
+  //height: 1.4rem;
+}
 .text{
   width: 10em;
-    text-align: left;
-    font-size: 1.2em;
+  text-align: left;
+  font-size: 1.2em;
    
+}
+
+.item {
+  width: 16em;
+  letter-spacing: 0.7px;
+  
+  
+}
+.item-chat{
+  display: flex;
+  align-items: center;
+  width: 16em;
+  letter-spacing: 0.7px;
 }
 
 .wright{
   background-color: #243e76;
-  height: 100%; //3.8
+  height: 5.125em; // 100%; //3.8
+  display: flex;
+  //align-items: center;
   
-
+ 
+ 
 }
 

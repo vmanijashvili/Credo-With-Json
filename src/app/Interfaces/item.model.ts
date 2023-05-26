@@ -12,9 +12,11 @@ export interface RightContainerInterface{
         img: string,
     }[],
     
-    
+    rightContainerSecond:{
         id: number,
         description: string,
         img: string,
+    }[]
+        
 
 }
