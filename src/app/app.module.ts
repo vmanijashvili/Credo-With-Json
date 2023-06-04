@@ -7,23 +7,24 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './Pages/Footer/footer/footer.component';
 import { HomeComponent } from './Pages/Home/home/home.component';
 import { RightNavContainerComponent } from './Pages/right-nav-container/right-nav-container.component';
-//import { CarouselModule } from 'primeng/carousel';
-//import { ButtonModule } from 'primeng/button';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
-    RightNavContainerComponent
+    RightNavContainerComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    //CarouselModule,
-    //ButtonModule
+    NgbModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-a {
-    text-decoration: none;
-}
+
+
+
 *{
     box-sizing: border-box;
+    text-decoration: none;
 }
 *{
     margin: 0;
@@ -11,9 +12,11 @@ a {
   Ul  li   {
     List-style: none;
 }
-a{
+a p{
  letter-spacing: 0.5px;
  outline: none;
+ color: white !important;
+ text-decoration: none;
 }
 
 body, html {
@@ -21,4 +24,19 @@ width: 100%;
 max-width: 1920px;
 margin: 0 auto;
 height: 100%;
+background-color: aqua;
 }
+ul{
+    margin-bottom: 0px !important;
+}
+
+
+a{
+    text-decoration: none !important;
+}
+
+
+
+@import "~bootstrap/dist/css/bootstrap.css";
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

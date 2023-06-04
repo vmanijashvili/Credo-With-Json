@@ -30,10 +30,21 @@
               "src/assets"
             ],
             "styles": [
+              
               "node_modules/bpg-web-001-caps/css/bpg-web-001-caps.min.css",
+              "node_modules/bpg-web-001/css/bpg-web-001.min.css",
+
               "src/styles.scss"
+
+             
+
+            
             ],
-            "scripts": []
+            "scripts": [
+            
+              
+             
+            ]
           },
           "configurations": {
             "production": {
@@ -101,9 +112,18 @@
             ],
             "styles": [
               "node_modules/bpg-web-001-caps/css/bpg-web-001-caps.min.css",
+              "node_modules/bpg-web-001/css/bpg-web-001.min.css",
+              
               "src/styles.scss"
+              
+              
+              
             ],
-            "scripts": []
+            "scripts": [
+              
+          
+              
+            ]
           }
         }
       }
