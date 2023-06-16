@@ -1,0 +1,602 @@
+/*.basic-container{
+    padding-top: 9.4rem;
+}*/
+.credoTop{
+    height: 24vw;
+    width: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 6em;
+    } 
+}
+.basic-list{
+    padding: 0 11.3%;
+    margin-top: 1.5rem;
+}
+.list-items{
+    display: flex;
+    gap: 1.4rem;
+    font-size: 0.9em;
+    justify-content: space-between;
+    
+}
+.items{
+    width: calc((100% - 8.125em)/5);
+    background-color: white;
+    padding-top: calc((100% - 8.125em)/5);
+    position: relative;
+    border-radius: 1.2em;
+    cursor: pointer;
+    
+    
+    .little-img{
+
+        position: absolute;
+        //max-height: 4em;
+        //max-width: 4em;
+        top: 30%;
+        left: 37.35%;
+        min-height: 3.5em; 
+        color: blue;
+    }
+    
+    
+}
+.description{ 
+
+    position: absolute;
+    top: calc(35% + 4em);
+    width: 100%;
+    padding: 0 1em;
+    text-align: center;
+    font-size: 1.1em;
+    color: #00609c;
+    margin-top: 1rem;
+    letter-spacing: 1px;
+   
+}
+.items:hover {
+    background: #ea4b37; 
+    color: white;
+    .description{
+        color: white;
+    }
+    .little-img{
+        filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    }
+}
+
+
+//shared
+
+.button{
+    padding: 0.75em 2.2em;
+    display: inline-block;
+    border: 0;
+    border-radius: 3em;
+    cursor: pointer;
+    outline: none;
+    font-family: "BPG WEB 001", sans-serif;
+}
+.white{
+    background-color: white;
+}
+
+
+//carousel section
+
+
+.parent-slide-credo{
+    width: 100%;
+    height: 28vw;
+    //height: 31vw;
+    padding: 0 11.3%;
+    display: flex;
+    justify-content: space-between;
+    margin:1.8em 0 4.1em 0;
+}
+.special-offer-for-expats{
+    //width: calc(34.6% - 2.4em);
+    position: relative;
+    //height: 100%;
+   
+}
+.special-offer-basic-image{
+    border-radius: 1.2em 1.2em 0;
+        height: 26.5vw;
+        cursor: pointer;
+       
+     
+        
+}
+
+.in-detail-special-offer-button{
+    position: absolute;
+    left: 2em;
+    bottom: 3.9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    transition-duration: 0.3s; 
+    img{
+        width: 10px;
+       align-items: center;
+       display: flex;
+    }
+}
+.in-details-spans{
+    font-size: 1em;
+    color: #ea4b37;
+    letter-spacing: 0.7px;
+    font-family: "BPG WEB 001", sans-serif;
+}
+
+.in-detail-special-offer-button:hover{
+    background-color: #ea4b37;
+    .in-details-spans{
+        color: white;
+        font-family: "BPG WEB 001", sans-serif;
+    } 
+}
+
+
+//Carousel-section
+
+.carusel-parents{
+    
+    width: calc(66.4% - 1.5em);
+    border: 1px solid grey;
+    border-radius:  1.2em 1.2em 0;
+    margin-bottom: 1.8em;
+    overflow: hidden; 
+}
+
+.picsum-img-wrapper{
+    cursor: pointer;
+}
+
+
+
+.carousel-caption{
+    position: relative;
+    display: flex;
+    width: calc(100% - 4rem);
+    //padding: 1.35em 0;
+    align-items: center;
+    text-align: start;
+    //top: 1.35em;
+    left: 2rem;
+    right: 2rem;
+    //height: auto;
+    justify-content: space-between;
+    overflow: hidden;
+    top: calc(100% - 2px);
+    padding: 2.7em 0;
+    
+}
+/* */
+.button-carusel{
+    background-color: #ea4b37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    transition-duration: 0.3s; 
+    img{
+        width: 10px;
+       align-items: center;
+       display: flex;
+    }
+    
+}
+
+.button-child-a{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.button-carusel:hover{
+    background-color: #db301a;
+}
+
+.carousel-descr{
+    font-size: 1.05em;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    color: #00609c;
+    //overflow: hidden;
+}
+
+
+
+
+/* Help */
+
+.contact-section{
+    background: #f2f2f2;
+    padding: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.contact-title{
+    position: relative;
+    font-size: 1.35em;
+    color: #00609c;
+    line-height: 1.15em;
+    width: 100%;
+    padding: 0 30%;
+    text-align: center;
+    
+}
+
+.contact-title::before {
+    Content: '';
+    position: absolute;
+    width: 3em;
+    height: 3px;
+    bottom: -.8em;
+    left: calc(50% - 1.5em);
+    background: #ea4b37
+    
+    
+}
+.help-desc{
+   
+    width: 100%;
+    padding: 0 21%;
+    line-height: 1.4em;
+    color: #575757;
+    margin: 2.2em 0;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 2.5rem;
+    img{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+.help-button-child{
+    display: flex;
+    gap: 1rem;
+    transition-duration: 0.3s; 
+}
+.help-span{
+    color: #ea4b37;
+}
+.help-button-child:hover{
+    background-color: #ea4b37;
+    .help-span{
+        color: white;
+    }
+    img{
+        filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    }
+}
+
+
+/* media room */
+
+.news-section{
+    margin-top: 3.75em;
+    margin-bottom: 4.75em;
+    padding: 0 11.3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.news-container-left{
+    width: calc(72% - 1.5em);
+    
+}
+
+.media-room{
+    margin-bottom: 1.15em;
+    font-size: 1.1em;
+    color: #00609c;
+    line-height: 1.2;
+}
+
+.left-side{
+    min-height: 18em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.left-content{
+    width: 52%;
+    border-radius: 1.2em 0 0 1.2em;
+    border: 2px solid #d8d8d8;
+    border-right: none;
+    padding: 1.6em 1.8em 1.5em;
+    
+}
+
+.media-text1{
+    font-size: 1.2em;
+    color: #00609c !important;
+    margin: 1.1em 0 1.15em;
+    line-height: 1.1em;
+    display: block;
+    cursor: pointer;
+}
+
+.media-text2{
+    font-size: 1em;
+    color: #575757 !important;
+    
+    line-height: 1.5em;
+    cursor: pointer;
+    display: block;
+}
+
+
+
+.button-content{
+    margin-top: 1.6em;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3rem;
+
+}
+.colo{
+    color: white;
+}
+.button-childd{
+    background-color: #ea4b37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.3s; 
+    img{
+       width: 10px;
+       align-items: center;
+       display: flex;
+       filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    }
+}
+.button22{
+    padding: 0.75em 1.8em;
+    display: inline-block;
+    border: 0;
+    border-radius: 3em;
+    cursor: pointer;
+    outline: none;
+    font-family: "BPG WEB 001", sans-serif;
+}
+.button-childd:hover{
+    background-color: #db301a;
+}
+.button-child-be{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+.buttons-text{
+    font-size: 0.9em;
+}
+.button-text2{
+   
+    color: #7a7a7a;
+    margin-right: 0.7em;
+    
+}
+
+.button-chil{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s; 
+    
+    img{
+       width: 10px;
+       align-items: center;
+       display: flex;
+       filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+    }
+}
+.button-chil:hover{
+    background-color: #ea4b37;
+    .button-text2{
+        color: white;
+    }
+}
+
+.photo-container{
+    background-image: url(https://credobank.ge/app/uploads/2022/10/490x400.jpg);
+    width: 48%;
+    border-radius: 0 1.2em 0 0;
+    overflow: hidden;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  
+    position: relative;
+    
+}
+.credo-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.15);
+}
+
+.news-container-right{
+    width: calc(28% - 1.5em);
+}
+
+.currency-container{
+    height: 21.2em;
+    border-radius: 1.2em 1.2em 0;
+    overflow: hidden;
+    background: #f2f2f2;
+    //position: relative;
+}
+.dropdown-box-home{
+    background: #00609c;
+    width: 100%;
+    height: 3.9em;
+    align-items: center;
+    padding-left: 1.6em;
+}
+
+
+//dropdown
+
+.menu-container{
+    width: 100%;
+    border-radius: 2em;
+    background: #d3d3d3;
+    display: inline-block;
+    
+    position: relative;
+}
+
+.menu-toggler{
+    height: 4em;
+    display: flex;
+    align-items: center;
+    background:  #00609c;
+    border-radius: 1.2em 1.2em 0 0;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    Position: relative;
+    font-size: 0.95em;
+}
+.menu-toggler::after {
+    Content: '';
+    background-image: url(../../../../assets/HomeImage/arrow/arrow-down.svg);
+   
+    background-size: cover ;
+    background-repeat: no-repeat;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-left: 0.7rem;
+    
+}
+
+
+.menu{
+    width: 100%;
+    background: #d3d3d3;
+    border-radius: 0 0 2em 2em;
+    position: absolute;
+    padding: 0.500em 1.6em 1em;
+}
+.menu-item{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-a{
+    cursor: pointer;
+    color: #747474;
+}
+.dropdown-a:hover{
+    color: #ea4b37;
+}
+
+
+.chraxo-parent{
+    padding: 1.1em 1.6em 0;
+}
+.chraxo{
+    display: flex;
+    //flex-wrap: wrap;
+    gap: 3em;
+    margin-bottom: 1rem;
+    padding-left: 0;
+    color: #9f9f9f;
+    
+}
+
+.currency-item{
+ display: flex;
+ //flex-wrap: wrap;
+ flex-direction: column;
+}
+
+
+.country-img {
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-right: 0.5em;
+}
+
+
+//shared content
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.money{
+   
+    color: #4e4e4e;
+    font-size: 1em;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.course{
+    gap: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.money-percentage{
+    width: 34%;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    height: 500px;
+    background-color: #4e4e4e;
+}
+
+.all-money{
+    
+    padding-top: 0.7rem;
+    
+    font-family: "BPG WEB 001", sans-serif;
+    color: #7a7a7a !important;
+    cursor: pointer;
+}
+.all-money:hover{
+        color: #ea4b37 !important; 
+   .money-icon{
+    filter: invert(40%) sepia(65%) saturate(1042%) hue-rotate(329deg) brightness(91%) contrast(102%);
+   }
+}
+
+.money-icon{
+    height: 11px;
+    width: 11px;
+    margin-left: 1rem;
+    cursor: pointer;
+    filter: invert(48%) sepia(7%) saturate(19%) hue-rotate(345deg) brightness(97%) contrast(84%);
+}

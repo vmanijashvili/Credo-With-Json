@@ -1,0 +1,424 @@
+<div class="credoTop">
+      <img src="https://credobank.ge/app/uploads/2023/01/anabrebi-web-banner-2.png" alt="">
+</div>
+    
+    <ng-container *ngIf="homePageData">
+        <div class="basic-list">
+            <div class="list-items">
+                
+                    <a class="items"  *ngFor="let items of homePageData.data">   
+                        <img class="little-img" src="{{items.img}}" alt="image">
+                        <h3 class="description">{{items.description}}</h3>
+                    </a> 
+                
+            </div>
+        </div>
+    </ng-container>
+
+
+
+
+
+<div class="parent-slide-credo">
+    <a class="special-offer-for-expats" >
+        <div>
+            <img class="special-offer-basic-image" src="assets/HomeImage/special-offer-slider-1.png" alt="img-special-offer">
+        </div>
+        
+        <div class=" in-detail-special-offer-button button white">
+          <span class="in-details-spans">ვრცლად</span>
+          <span>
+            <img src="assets/HomeImage/download (2).svg" alt="">
+          </span>
+        </div>
+        
+    </a>
+
+
+ 
+
+
+
+
+   <div class="carusel-parents">
+
+    <ngb-carousel *ngIf="images">
+      
+      <ng-template ngbSlide source>
+        <div class="picsum-img-wrapper">
+          <a>
+            <img [src]="images[0]" alt="Random first slide" />
+          </a>
+        </div>
+
+
+        <div class="carousel-caption">
+
+          <h5 class="carousel-descr" >
+            <a>ხალი ციფრული ბარათი უკვე შენს ელექტრონულ საფულეში</a>
+          </h5>
+
+          <div class="button button-carusel">
+            <a class="button-child-a">
+            <span class="slide-button-text">ვრცლად</span>
+            <img src="assets/HomeImage/download (2).svg" alt="">
+            </a>
+          </div>
+        </div>
+       
+      </ng-template>
+
+    
+      
+
+      <ng-template ngbSlide >
+        <div class="picsum-img-wrapper">
+          <a>
+            <img [src]="images[1]" alt="Random first slide" />
+          </a>
+        </div>
+
+
+        <div class="carousel-caption">
+
+          <h5 class="carousel-descr">
+            <a>გახსენი ვადიანი ანაბარი და დააგროვე იმაზე მეტი, ვიდრე წარმოგედგინა - 13.35%-მდე (ეფექტური 12.56%-მდე)</a>
+          </h5>
+
+          <div class="button button-carusel">
+            <a class="button-child-a">
+            <span class="slide-button-text">ვრცლად</span>
+            <img src="assets/HomeImage/download (2).svg" alt="">
+            </a>
+          </div>
+
+        </div>
+      </ng-template>
+      
+      <ng-template ngbSlide source>
+        <div class="picsum-img-wrapper">
+          <a>
+            <img [src]="images[2]" alt="Random first slide" />
+          </a>
+        </div>
+
+
+        <div class="carousel-caption">
+
+          <h5 class="carousel-descr">
+            <a>ონლაინ განვადების შეთავაზების ახალი პლატფორმა ბიზნესის მფლობელებისთვის</a>
+          </h5>
+
+          <div class="button button-carusel">
+            <a class="button-child-a">
+            <span class="slide-button-text">ვრცლად</span>
+            <img src="assets/HomeImage/download (2).svg" alt="">
+            </a>
+          </div>
+
+        </div>
+      </ng-template>
+
+      <ng-template ngbSlide source>
+        <div class="picsum-img-wrapper">
+          <a>
+            <img [src]="images[3]" alt="Random first slide" />
+          </a>
+        </div>
+
+
+        <div class="carousel-caption">
+
+          <h5 class="carousel-descr">
+            <a>მიიღე დაფინანსება მომენტალურად და დაიტოვე მანქანის მართვის უფლება</a>
+          </h5>
+
+          <div class="button button-carusel">
+            <a class="button-child-a">
+            <span class="slide-button-text">ვრცლად</span>
+            <img src="assets/HomeImage/download (2).svg" alt="">
+            </a>
+          </div>
+
+        </div>
+      </ng-template>
+
+      <ng-template ngbSlide source>
+        <div class="picsum-img-wrapper">
+          <a>
+            <img [src]="images[4]" alt="Random first slide" />
+          </a>
+        </div>
+
+
+        <div class="carousel-caption">
+
+          <h5 class="carousel-descr">
+            <a>მიიღე სასურველი ტიპის ანაბარზე ყველაზე მაღალი სარგებელი! </a>
+          </h5>
+
+          <div class="button button-carusel">
+            <a class="button-child-a">
+            <span class="slide-button-text">ვრცლად</span>
+            <img src="assets/HomeImage/download (2).svg" alt="">
+            </a>
+          </div>
+
+        </div>
+      </ng-template>
+
+      <ng-template ngbSlide source>
+        <div class="picsum-img-wrapper">
+          <a>
+            <img [src]="images[5]" alt="Random first slide" />
+          </a>
+        </div>
+
+
+        <div class="carousel-caption">
+
+          <h5 class="carousel-descr">
+            <a>მიიღე სესხი ცუდი საკრედიტო ისტორიის მიუხედავად და გაიუმჯობესე ჩვენთან ერთად! </a>
+          </h5>
+
+          <div class="button button-carusel">
+            <a class="button-child-a">
+            <span class="slide-button-text">ვრცლად</span>
+            <img src="assets/HomeImage/download (2).svg" alt="">
+            </a>
+          </div>
+
+        </div>
+      </ng-template>
+
+      
+      <ng-template ngbSlide source>
+        <div class="picsum-img-wrapper">
+          <a>
+            <img [src]="images[6]" alt="Random first slide" />
+          </a>
+        </div>
+
+
+        <div class="carousel-caption">
+
+          <h5 class="carousel-descr">
+            <a>- საკრედიტო VISA ბარათი - მუდმივად ხელმისაწვდომი თანხა შენს ანგარიშზე!</a>
+          </h5>
+
+          <div class="button button-carusel">
+            <a class="button-child-a">
+            <span class="slide-button-text">ვრცლად</span>
+            <img src="assets/HomeImage/download (2).svg" alt="">
+            </a>
+          </div>
+
+        </div>
+      </ng-template>
+
+      <ng-template ngbSlide source>
+        <div class="picsum-img-wrapper">
+          <a>
+            <img [src]="images[7]" alt="Random first slide" />
+          </a>
+        </div>
+
+
+        <div class="carousel-caption">
+
+          <h5 class="carousel-descr">
+            <a>განსაკუთრებული შესაძლებლობები ქართველი ემიგრანტებისთვის! </a>
+          </h5>
+
+          <div class="button button-carusel">
+            <a class="button-child-a">
+            <span class="slide-button-text">ვრცლად</span>
+            <img src="assets/HomeImage/download (2).svg" alt="">
+            </a>
+          </div>
+
+        </div>
+      </ng-template>
+
+    </ngb-carousel>
+    
+   </div>
+  
+
+    
+
+
+
+</div>
+
+<ng-container *ngIf="homePageData">
+<div class="contact-section">
+    <h3 class="contact-title">გესაჭიროებათ დახმარება? დაგვირეკეთ *4242 ან მოგვწერეთ ნებისმიერ დროს </h3>
+    <div class="help-desc">
+      მოგვმართეთ თქვენთვის მოსახერხებელი გზით - დაგვიკავშირდით ცხელი ხაზის ნომერზე - (+995 32) 242 42 42,
+      მოგვწერეთ ონლაინ ჩატში ან დაგვიტოვეთ თქვენი საკონტაქტო ნომერი და ჩვენ თავად დაგიკავშირდებით.
+    </div>
+    <div class="button-container">
+        <div class="help-button">
+          <a class="help-button-child button white">
+            <img src="assets/HomeImage/temporary/location-orangre.png" alt="">
+            <span class="help-span">მისამართები</span>
+          </a>
+        </div>
+        <div class="help-button">
+          <a class="help-button-child button white">
+            <img src="../../../../assets/HomeImage/temporary/მოგვწერეთ.png" alt="">
+            <span class="help-span">მოგვწერეთ</span>
+          </a>
+        </div>
+        <div class="help-button">
+          <a class="help-button-child button white">
+            <img src="../../../../assets/HomeImage/temporary/დაგვიტოვეთ ნომერი.png" alt="">
+            <span class="help-span">დაგვიტოვეთ ნომერი</span>
+          </a>
+        </div>
+    </div>
+</div>
+</ng-container>
+
+<div class="news-section">
+  <div class="news-container-left">
+    <h3 class="media-room">მედია ოთახი</h3>
+
+    <div class="left-side">
+      <div class="left-content">
+        <time>11.10.2022</time>
+          <a class="media-text1">თბილისში, კრედო ბანკის პირველი ექსპატ სერვისცენტრი გაიხსნა!</a>
+          <a class="media-text2">კრედო ბანკმა თბილისში, პირველი ექსპატ სერვისცენტრი ჭავჭავაძის #16 ნომერში გახსნა,
+            რომელიც უცხო ქვეყნის მოქალაქეებს საბანკო-საკრედიტო პროდუქტებსა და სერვისებზე 
+            ინდივიდუალურ, სრულყოფილ მომსახურებას გაუწევს.</a>
+        <div class="button-content">
+
+          <div class="button22 button-childd">
+            <a class="button-child-be">
+            <span class="buttons-text colo">ვრცლად</span>
+             <img src="assets/HomeImage/download (2).svg" alt="">
+            </a>
+          </div>
+          
+          <div class="button22 button-chil">
+            <a class="button-child-be">
+            <span class="button-text2">ყველა სიახლე</span>
+             <img src="assets/HomeImage/download (2).svg" alt="">
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="photo-container">
+        <div class="credo-image"></div>
+      </div>
+    </div>
+      
+   
+  </div>
+
+
+  <div class="news-container-right">
+    <h3 class="media-room">ვალუტის კურსი</h3>
+    <div class="currency-container">
+
+      
+<div class="menu-container">
+    <div class="menu-toggler" (click)="toggleMenu()" >კრედო ბანკის კომერციული კურსი</div>
+    <div class="menu" *ngIf="isMenuOpened">
+        <div class="menu-item">
+            <a > 
+                <span class="dropdown-a">ინტერნეტ ბანკის და გზავნილის კურსი</span>
+            </a>
+        </div>
+        <div class="menu-item">
+            <a >
+                <span class="dropdown-a">ავტომატური ოპერაციების კურსი</span>
+            </a>
+        </div>
+        <div class="menu-item">
+          <a >
+                <span class="dropdown-a">ეროვნული ბანკის კურსი</span>
+          </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="chraxo-parent">
+    <ul class="chraxo">
+      <li>ვალუტა</li>
+      <li>ყიდვა</li>
+      <li>გაყიდვა</li>
+    </ul>
+
+    <div class="currency-item">
+      
+          <div class="money flex">
+            <div class="money-percentage flex">
+              <img class="country-img" src="https://credobank.ge/app/themes/credo/dist/images/flags/USD_cbfe8d83.svg" alt="usa">
+              <div class="country">USD</div>
+            </div>  
+            <div class="flex course">
+              <div>2.6030</div>
+              <div>2.6230</div>
+            </div>  
+          </div>
+
+
+          <div class="money flex">
+            <div class="money-percentage flex">
+              <img  class="country-img" src="https://credobank.ge/app/themes/credo/dist/images/flags/EUR_91f19dae.svg" alt="eur">
+              <div class="country">EUR</div>
+            </div>
+             <div class="flex course">
+                <div>2.8085</div>
+                <div>2.8335</div>
+             </div>
+          </div>
+
+          <div class="money flex">
+            <div class="money-percentage flex">
+                <img  class="country-img" src="https://credobank.ge/app/themes/credo/dist/images/flags/RUB_658c4a37.svg" alt="eur">
+                <div class="country">RUB</div>
+            </div>
+              <div class="flex course">
+                <div>0.0252</div>
+                <div>0.0350</div>
+              </div>  
+          </div>
+        <div class="tests">
+          <a class="all-money">
+            <span class="span-money">ყველა ვალუტა</span>
+            <img class="money-icon" src="../../../../assets/rihgth.svg" alt="right arrow">
+          </a>
+        </div>    
+    </div>
+
+  </div>
+
+  
+</div>
+
+
+
+</div>
+<div class="footer"> footer</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

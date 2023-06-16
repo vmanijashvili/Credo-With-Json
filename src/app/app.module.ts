@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './Pages/Header/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './Pages/Footer/footer/footer.component';
-import { HomeComponent } from './Pages/Home/home/home.component';
-import { RightNavContainerComponent } from './Pages/right-nav-container/right-nav-container.component';
+import { HomeComponent } from './Home/components/home/home.component';
+import { RightNavContainerComponent } from './Right-nav-container/components/right-nav-container/right-nav-container.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 

@@ -34,13 +34,25 @@
             <a class="lang eng">ENG</a>
         </div>
 
-        <div class="internetbank">
-            <div class="child-internetbank">
-                <img src="../../../../assets/Padlock.svg" alt="">
-                <a>ინტერნეტბანკი</a>
-                <img src="../../../../assets/dropdown.svg" alt="">
+        <div class="menu-container">
+           <div class="menu-toggler" (click)="toggleMenu()" >ინტერნეტბანკი</div> 
+            <div class="menu" *ngIf="isMenuOpened">
+                <div class="vnaxot">
+                    <div class="menu-item">
+                        <a > 
+                            <span class="dropdown-a">ფიზიკური პირი</span>
+                        </a>
+                    </div>
+                    <div class="menu-item">
+                        <a >
+                            <span class="dropdown-a">იურიდიული პირი</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
+
+        
     </div>
 </div>
 
