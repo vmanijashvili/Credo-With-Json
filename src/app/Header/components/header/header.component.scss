@@ -1,0 +1,394 @@
+.general{
+    Position: fixed;
+    z-index: 9999;    
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header-basic-container{
+    width: 100%;
+    height: 5.6rem; //64px 3.8
+    display: flex;
+    align-items: center;
+    padding: 0 3%;
+    justify-content: space-between;
+    background-color: white;
+    
+}
+
+.image-credo{
+    width: 262px;
+    height: 41px;
+}
+.numberss{
+    display: flex;
+    align-items: center;
+    gap: 1.56em; // 25px;
+    img{
+        height: 18px;
+        width: 17px;
+    }
+}
+.header-ul{
+    margin-bottom: 0;
+}
+.header-li{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5em;
+    color: #747474;
+    font-size: 1rem;
+    font-family: "BPG WEB 001 Caps", sans-serif;
+    
+}
+
+.hov:hover{
+    color: #ea4b37;
+    cursor: pointer;
+   .onColor{
+    filter: invert(40%) sepia(65%) saturate(1042%) hue-rotate(329deg) brightness(91%) contrast(102%);}
+
+}
+.eng:hover{
+    color: #ea4b37;
+}
+
+.adreses{
+    display: flex;
+    align-items: center;
+}
+.languages{
+   display: grid;
+   gap: 0.6rem;
+   grid-template-columns: repeat(2, 1fr);
+   
+}
+.lang.geo{
+    color:  #ea4b37;
+    border: 2px solid  #ea4b37;
+}
+.lang{
+    color: #747474;
+    font-family: 'Poppins', sans-serif;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.menu-container{
+    //top: 2rem;
+    //background: #243e76;
+    //height: 140px;
+    border-radius: 3em;
+    align-items: baseline;
+    cursor: pointer;
+    display: grid;
+    position: relative;
+    z-index: 1;
+    
+}
+.menu-toggler{
+    top: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-right: 0.3em;
+    position: relative;
+    background: #00609c;
+    height: 45px;
+    padding: 0.75em 0.9em;
+    border-radius: 3em;
+    z-index: 2;
+    
+}
+.menu-toggler::after{
+    content: '';
+    background-image: url(../.././../../assets/HomeImage/arrow/arrow-down.svg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 1em;
+    width: 1em;
+    cursor: pointer;
+    margin-left: 0.7rem;
+
+}
+.menu-toggler::before{
+    content: '';
+    background-image: url(../.././../../assets/Padlock.svg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 1em;
+    width: 1em;
+    cursor: pointer;
+    margin-right: 0.3rem;
+}
+.menu{
+    width: 100%;
+    height: 140px;
+    background: #243e76;
+    padding: 1em;
+    border-radius: 2em 2em 2em 2em;
+    position: absolute;
+    z-index: 1;
+    line-height: 1.9em;
+    
+}
+.vnaxot{
+    position: absolute;
+    top: 60px;
+    color: white;
+}
+.pysical{
+    display: flex;
+    font-size: 0.9em;
+    padding-right: 0.7em;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    
+}
+.pysical::before{
+    content: '';
+    background-image: url(../../../../assets/HomeImage/arrow/businesMan.svg);
+    height: 0.9em;
+    width: 1em;
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.pysical::after{
+    content: '';
+    background-image: url(../../../../assets/HomeImage/arrow/arrow-right.svg);
+    height: 0.9em;
+    width: 0.9em;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+}
+.legal{
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    justify-content: space-between;
+    gap: 5px;
+   
+}
+ 
+.legal::before{
+    content: '';
+    background-image: url(../../../../assets/HomeImage/arrow/bag-chanta.svg);
+    height: 0.9em;
+    width: 1em;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    
+}
+.legal::after{
+    content: '';
+    background-image: url(../../../../assets/HomeImage/arrow/arrow-right.svg);
+    height: 0.9em;
+    width: 0.9em;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    
+}
+
+
+// ქვედა ჰედერი
+
+.primary-menu{
+    height: 3.8rem;
+    width: 100%;
+    background: #ea4b37;
+    position: relative;
+}
+
+.nav-primary{
+    height: 100%;
+    padding: 0 11.3%;
+    display: flex;
+}
+.navigation-ul{
+    display: flex;
+    height: 100%;
+    padding: 0;
+}
+.nav-li{
+    height: auto;
+}
+.nav-a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #fff !important;
+    padding: 0 3.5em;
+    align-items: center;
+    font-family: "BPG WEB 001 Caps", sans-serif;
+    font-size: 1em;
+}
+.nav-a:hover{
+    background-color: white !important;
+    color: #ea4b37 !important;
+    cursor: default;
+}
+.nav-a.pointer:hover{
+    background-color: white;
+    color: #ea4b37;
+    cursor: pointer;
+}
+
+  .content ul{
+    display: none;
+  }
+  .content:hover ul {
+    display: block;
+    position: absolute;
+    background-color:white;
+    width: 77.41%;
+    height: 600px;
+    border-radius: 0 0 13px 13px;
+    z-index: 9;
+    
+  }
+
+  //dropdown section
+
+//shared 
+
+ .dropdown-1{
+    padding: 2.375em 3.125em;
+   
+ }
+ .bottom-container{
+    width: 100%;
+    height: 45px;
+    border-radius: 0 0 15px 15px;
+    background-color: #00609c;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    cursor: pointer;
+ }
+ .dropdown-text{
+    color: #fff;
+    font-size: 0.65em;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+    font-family: "BPG WEB 001 Caps", sans-serif;
+ }
+
+ .icon-arrow::after{
+    content: '';
+    background-image: url(../../../../assets/rihgth.svg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 11px;
+    width: 11px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    background-position: 50% 50%;
+ }
+ .display-f{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
+ }
+
+//shared end
+
+
+//dropdown section
+
+.menu-image-container{
+    width: 75%;
+    display: flex;
+    margin: 0.8em 0;
+    float: right;
+}
+
+.list-item{
+    max-width: calc(25% - 3em);
+    width: max-content;
+    margin: 0.8em 0;
+    display: bloc;
+    cursor: pointer;
+    a{
+        position: relative;
+    }
+}
+.span-text{
+    font-size: 0.9em;
+    letter-spacing: .7px;
+    color: #707070;
+    cursor: pointer;
+    display: flex;
+    font-family: "BPG WEB 001 Caps", sans-serif;
+}
+
+//.span-text:hover{
+    //color: #ea4b37;
+   // position: relative;
+//}
+
+.span-text:hover::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    left: -1.1em;
+    background-color: #ea4b37;
+}
+
+.shared{
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    width: 33.33333%;
+    height: 21vw;
+    border-radius: 15px 15px 0;
+    overflow: hidden;
+    margin-right: 1.5em;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.photo1{
+    background-image: url(https://credobank.ge/app/uploads/2018/12/fizikuri-1.jpg);
+    
+    
+}
+
+.photo2{
+    background-image: url(https://credobank.ge/app/uploads/2018/12/fizikuri-2.jpg);
+
+}
+.photo3{
+    background-image: url(https://credobank.ge/app/uploads/2018/12/biznes-7.jpg);
+}
+.img-descr{
+    color: white;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+    width: calc(100% - 3em);
+    font-size: 1em;
+    line-height: 1.4em;
+    letter-spacing: 1px;
+    font-family: "BPG WEB 001 Caps", sans-serif;
+}
+.credo-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.15);
+}

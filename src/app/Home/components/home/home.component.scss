@@ -4,10 +4,12 @@
 .credoTop{
     height: 24vw;
     width: 100%;
+    margin-top: 9.4rem;
     img{
         width: 100%;
         height: 100%;
         border-bottom-left-radius: 6em;
+       
     } 
 }
 .basic-list{
@@ -124,6 +126,7 @@
         width: 10px;
        align-items: center;
        display: flex;
+       
     }
 }
 .in-details-spans{
@@ -182,7 +185,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.6rem;
+    gap: 0.6em;
     transition-duration: 0.3s; 
     img{
         width: 10px;
@@ -195,7 +198,7 @@
 .button-child-a{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.5em;
 }
 .button-carusel:hover{
     background-color: #db301a;
@@ -259,10 +262,10 @@
 .button-container{
     display: flex;
     justify-content: space-around;
-    gap: 2.5rem;
+    gap: 2.5em;
     img{
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 1.5em;
+        width: 1.5em;
     }
 }
 .help-button-child{
@@ -350,7 +353,7 @@
     align-items: center;
     display: flex;
     flex-wrap: nowrap;
-    gap: 3rem;
+    gap: 3em;
 
 }
 .colo{
@@ -384,7 +387,7 @@
 .button-child-be{
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.5em;
     
 }
 

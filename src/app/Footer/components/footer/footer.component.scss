@@ -1,0 +1,137 @@
+.padd{
+    padding: 0 11.3%;
+    letter-spacing: .5px;
+}
+.top-container{
+    background: #f2f2f2;
+    padding-top: 2.625em;
+    padding-bottom: 4.75em;
+    display: flex;
+}
+.content-left{
+    width: 35%;
+}
+.logo{
+    cursor: pointer;
+    img{
+        height: 2.6em;
+    }
+}
+.content-right{
+    display: flex;
+}
+
+.icon-arrow{
+    
+    display: flex;
+    align-items: center;
+    padding-right: 1em;
+    
+    //width: calc(100% - 1.5em);
+}
+.icon-arrow::before{
+    content: '';
+    background-image: url(../../../../assets/rihgth.svg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 10px;
+    width: 10px;
+    filter: invert(40%) sepia(65%) saturate(1042%) hue-rotate(329deg) brightness(91%) contrast(102%);
+    background-position: 50% 50%;
+}
+.item{
+    color: #00609c;
+    display: flex;
+    line-height: 2em;
+}
+.item:hover{
+    color: #ea4b37;
+}
+
+.flex{
+    display: flex;
+    gap: 1.2em;
+    margin-bottom: 0;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon{
+    height: 1em;
+    max-width: 1.2em;
+    
+}
+.icon:hover{
+    filter: invert(40%) sepia(65%) saturate(1042%) hue-rotate(329deg) brightness(91%) contrast(102%);
+}
+
+
+
+//bottom-container
+.white{
+    color: white;
+}
+.footer-bottom-container{
+    position: relative;
+    width: 100%;
+    height: 4.4em;
+    background: #ea4b37;
+}
+.footer-content{
+    background: #00609c;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5.7em;
+    padding: 0 6.4em 0 12em;
+    //padding-left: 7.125em;
+    width: calc(100% - 7.125em);
+    border-top-right-radius: 3.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-center{
+    margin: 0;
+    color: white !important;
+    display: flex;
+    align-items: center;
+}
+.center-text{
+    font-size: 0.9em;
+    display: flex;
+}
+.center-text-aft{
+    display: flex;
+    gap: 1.1rem;
+}
+.center-text-aft::after{
+    content: '';
+    width: 1px;
+    height: 1.2em;
+    background: #fff;
+}
+
+.right{
+    font-size: 1em;
+    padding-right: 1.7em;
+}
+.created-section{
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+}
+.created-section::after{
+    content: '';
+    background-image: url(../../../../assets/soc-icons/wisual-studio.svg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 2rem;
+    width: 2rem;
+    background-color: #00609c;
+}
