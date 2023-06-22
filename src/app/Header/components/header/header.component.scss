@@ -237,6 +237,9 @@
     color: #ea4b37;
     cursor: pointer;
 }
+//dropdown section
+
+//  ესაა მაუსის მიტანაზე ჩამოშლის კლასები
 
   .content ul{
     display: none;
@@ -244,6 +247,7 @@
   .content:hover ul {
     display: block;
     position: absolute;
+    left: 11.3%;                        
     background-color:white;
     width: 77.41%;
     height: 600px;
@@ -252,9 +256,7 @@
     
   }
 
-  //dropdown section
-
-//shared 
+  // აქამდე
 
  .dropdown-1{
     padding: 2.375em 3.125em;
@@ -304,6 +306,11 @@
 //shared end
 
 
+
+
+
+
+
 //dropdown section
 
 .menu-image-container{
@@ -332,10 +339,7 @@
     font-family: "BPG WEB 001 Caps", sans-serif;
 }
 
-//.span-text:hover{
-    //color: #ea4b37;
-   // position: relative;
-//}
+// ესაამაუსის მიტანის დროს რომ გვერდით კონტენტი გაიჩითოს თავისი ფერიანად
 
 .span-text:hover::before {
     content: '';
@@ -347,6 +351,7 @@
     left: -1.1em;
     background-color: #ea4b37;
 }
+
 
 .shared{
     background-repeat: no-repeat;
@@ -363,7 +368,6 @@
 }
 .photo1{
     background-image: url(https://credobank.ge/app/uploads/2018/12/fizikuri-1.jpg);
-    
     
 }
 
@@ -391,4 +395,32 @@
     left: 0;
     top: 0;
     background: rgba(0,0,0,.15);
+}
+
+.photo-career1{
+    background-image: url(https://credobank.ge/app/uploads/2018/12/kredo-1-1.jpg);
+}
+.photo-career2{
+    background-image: url(https://credobank.ge/app/uploads/2018/12/job-fair-2-2.jpg);
+}
+.photo-career3{
+    background-image: url(https://credobank.ge/app/uploads/2018/12/kariera-mega-menu-2.jpg
+    );
+}
+
+.span-after:hover::after {
+    content: '';
+    background-image: url(../../../../assets/header-icon/right-header.svg);
+    position: absolute;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    transform-origin: 50%;
+    height: 1em;
+    width: 1em;
+    top: 0.35em;
+    left: 15vw;
+    display: inline-block;
+    //vertical-align: text-top;
+   
+    
 }
