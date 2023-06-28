@@ -37,7 +37,7 @@
             <div class="menu-container">
             <div class="menu-toggler" (click)="toggleMenu()" >ინტერნეტბანკი</div> 
                 <div class="menu" *ngIf="isMenuOpened">
-                    <div class="vnaxot">
+                    <div class="internet-menu">
                         <div class="menu-item">
                             <a > 
                                 <span class=" pysical">ფიზიკური პირი</span>
@@ -64,17 +64,18 @@
     <div class="primary-menu">
         <nav  class="nav-primary ">
 
-            <ul class="navigation-ul" >
-                <li class="nav-li content ">
-                    <a class="nav-a">კრედოს შესახებ</a>
-                    
-                       <ul class="dropdown-1">
+             <ul class="navigation-ul" >
+                    <li class="nav-li content ">
+                        <a class="nav-a">კრედოს შესახებ</a>
+                        
+
+                       <ul class="dropdown-1 ">
                           
                             <div class="menu-image-container">
-                                <a class="bg-cover photo1 shared" href="">
+                               <a class="bg-cover photo1 shared" href="">
                                     <div class="credo-background"></div>
                                     <h4 class="img-descr">დეპოზიტები</h4>
-                                </a>
+                                </a> 
                                 <a  class="bg-cover photo2 shared"  href="">
                                     <div class="credo-background"></div>
                                     <h4 class="img-descr">ინტერნეტ ბანკი</h4>
@@ -91,7 +92,7 @@
                                     <span class="icon-arrow"></span>
                                 </h4>
                             </a>
-
+                        
                                 <li class="list-item">
                                     <a>
                                         <span class="span-text">მისია და ფასეულობები</span>
@@ -142,18 +143,19 @@
 
 
                         </ul>      
-
-                    </li>
                     
-            </ul>
-                
+                    </li>
+                </ul>
 
-                <ul class="navigation-ul">
+            <ul class="navigation-ul">
                     <li class="nav-li content">
                         <a class="nav-a">ფიზიკური პირები</a>
-                        <ul class="dropdown-1">
-                          
-                            <div class="menu-image-container">
+
+                        <ul class="dropdown-1 ">
+
+                            <div class="vertical-border"></div>
+
+                            <div class="menu-image-container two-columns">
                                 <a class="bg-cover photo1 shared" href="">
                                     <div class="credo-background"></div>
                                     <h4 class="img-descr">დეპოზიტები</h4>
@@ -162,7 +164,6 @@
                                     <div class="credo-background"></div>
                                     <h4 class="img-descr">ინტერნეტ ბანკი</h4>
                                 </a>
-                              
                             </div>
 
                             <a class="bottom-container " href="">
@@ -176,79 +177,352 @@
                                     <a>
                                         <span class="span-text span-after">სესხები</span>
                                     </a>
+                                    <ul class="display-no">
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">საკრედიტო ბარათი VISA</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li class="test">
+                                            <a href="">
+                                                <span class="span-text">სამომხმარებლო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">სესხი ონლაინ</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ავტო ლომბარდი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="list-item">
                                     <a>
                                         <span class="span-text span-after">დაზღვევა</span>
                                     </a>
+                                    <ul class="display-no">
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">საკრედიტო ბარათი VISA</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">სამომხმარებლო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">სესხი ონლაინ</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ავტო ლომბარდი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="list-item">
                                     <a>
                                         <span class="span-text span-after">ბარათები</span>
                                     </a>
+                                    <ul class="display-no">
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">საკრედიტო ბარათი VISA</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">სამომხმარებლო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                <span class="span-text">სესხი ონლაინ</span>
+                                            </a>
+                                        </li>
+                                        <li class="right-li-section">
+                                            <a href="">
+                                                 <span class="span-text">ავტო ლომბარდი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="list-item">
                                     <a>
                                         <span class="span-text span-after">დაზღვევა</span>
                                     </a>
+                                    <ul class="display-no">
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">საკრედიტო ბარათი VISA</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სამომხმარებლო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სესხი ონლაინ</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ავტო ლომბარდი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="list-item">
                                     <a>
                                         <span class="span-text span-after">სტარტ-აპ სესხები</span>
                                     </a>
+                                    <ul class="display-no list-child">
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">საკრედიტო ბარათი VISA</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სამომხმარებლო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სესხი ონლაინ</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ავტო ლომბარდი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="list-item">
                                     <a>
                                         <span class="span-text span-after">ფულადი გზავნილები</span>
                                     </a>
+                                    <ul class="display-no list-child">
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">საკრედიტო ბარათი VISA</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სამომხმარებლო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სესხი ონლაინ</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ავტო ლომბარდი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="list-item">
                                     <a>
                                         <span class="span-text span-after">ანაბრები</span>
                                     </a>
+                                    <ul class="display-no list-child">
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">საკრედიტო ბარათი VISA</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სამომხმარებლო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სესხი ონლაინ</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ავტო ლომბარდი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="list-item">
                                     <a>
                                         <span class="span-text span-after">ანგარიშები</span>
                                     </a>
+                                    <ul class="display-no list-child">
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">საკრედიტო ბარათი VISA</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სამომხმარებლო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სესხი ონლაინ</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ავტო ლომბარდი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="list-item">
                                     <a>
                                         <span class="span-text span-after">აქციები</span>
                                     </a>
+                                    <ul class="display-no list-child">
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">საკრედიტო ბარათი VISA</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სამომხმარებლო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სესხი ონლაინ</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ავტო ლომბარდი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="list-item">
                                     <a>
                                         <span class="span-text span-after">სერვისები</span>
                                     </a>
+                                    <ul class="display-no list-child">
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">საკრედიტო ბარათი VISA</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სამომხმარებლო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">სესხი ონლაინ</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span class="span-text">ავტო ლომბარდი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
 
                            
 
 
                         </ul>
+                       
+                                         
                     </li>
                 </ul>
-
-                <ul class="navigation-ul">
+            
+            <ul class="navigation-ul">
                     <li class="nav-li">
                         <a class="nav-a">ბიზნესი</a>
-                        <ul class="dropdown">
-                            <div class="vertical-border"></div>
-                        </ul>
+                        
                     </li>
                 </ul>
 
-                <ul class="navigation-ul">
+            <ul class="navigation-ul">
                     <li class="nav-li">
                         <a class="nav-a pointer">კრედოს რჩეული</a>
+
                     </li>
                 </ul>
 
-                <ul class="navigation-ul">
+            <ul class="navigation-ul">
                     <li class="nav-li content">
                         <a class="nav-a">კარიერა</a>
-                        <ul class="dropdown-1">
+<!--
+
+                        <ul class="dropdown-1 directive">
                             
                             <div class="menu-image-container">
                                 <a class="bg-cover photo-career1 shared" href="">
@@ -299,10 +573,10 @@
 
 
                         </ul>  
-
+                    -->
                     </li>
                 </ul>
-
+            
          </nav>
         
 
@@ -313,4 +587,77 @@
 
 
 
-
+<!--
+    <ul class="dropdown2">
+                                        <li>
+                                            <a href="">
+                                                <span>საკრედიტო ბარათი VISA</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>ბიზნეს სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>სამომხმარებლო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>სესხი ონლაინ</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>ავტო ლომბარდი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>ავტო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>იპოთეკური სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>შეღავათიანი აგროკრედიტები</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>აგრო სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>ტურისტული სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>სტუდენტური სესხი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>უფასო ფული</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>სახელფასო ოვერდრაფტი</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <span>რე-სტარტ სესხი</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+-->

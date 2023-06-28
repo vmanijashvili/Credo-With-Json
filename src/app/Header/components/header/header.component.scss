@@ -133,7 +133,7 @@
     line-height: 1.9em;
     
 }
-.vnaxot{
+.internet-menu{
     position: absolute;
     top: 60px;
     color: white;
@@ -213,9 +213,12 @@
     display: flex;
     height: 100%;
     padding: 0;
+    flex-wrap: wrap;
+    
 }
 .nav-li{
     height: auto;
+    
 }
 .nav-a{
     width: 100%;
@@ -240,10 +243,10 @@
 //dropdown section
 
 //  ესაა მაუსის მიტანაზე ჩამოშლის კლასები
-
-  .content ul{
+.content ul{
     display: none;
   }
+
   .content:hover ul {
     display: block;
     position: absolute;
@@ -255,13 +258,31 @@
     z-index: 9;
     
   }
-
-  // აქამდე
-
- .dropdown-1{
+  .dropdown-1{
     padding: 2.375em 3.125em;
    
  }
+  // აქამდე
+
+  //ქვემოთ ჩასატანი
+
+  .list-item ul {
+    display: none !important;
+    
+ }
+ .list-item:hover ul{
+    //visibility: visible;
+    position: absolute;
+    left: calc(25% + 1.5em);
+    top: 3.125em;
+    width: calc(25% - 3em);
+    height: 500px;
+    box-sizing: border-box;
+    display: inline-block !important;
+    background-color:white;
+ }
+
+
  .bottom-container{
     width: 100%;
     height: 45px;
@@ -318,13 +339,15 @@
     display: flex;
     margin: 0.8em 0;
     float: right;
+    clear: both;
 }
 
 .list-item{
+    
     max-width: calc(25% - 3em);
     width: max-content;
     margin: 0.8em 0;
-    display: bloc;
+    display: block;
     cursor: pointer;
     a{
         position: relative;
@@ -335,11 +358,15 @@
     letter-spacing: .7px;
     color: #707070;
     cursor: pointer;
-    display: flex;
+    display: block;
     font-family: "BPG WEB 001 Caps", sans-serif;
 }
 
 // ესაამაუსის მიტანის დროს რომ გვერდით კონტენტი გაიჩითოს თავისი ფერიანად
+.span-text:hover{
+    color: #ea4b37;
+    
+}
 
 .span-text:hover::before {
     content: '';
@@ -356,8 +383,7 @@
 .shared{
     background-repeat: no-repeat;
     background-size: cover;
-   
-    width: 33.33333%;
+    width: 50%;
     height: 21vw;
     border-radius: 15px 15px 0;
     overflow: hidden;
@@ -414,13 +440,49 @@
     position: absolute;
     background-size: cover ;
     background-repeat: no-repeat;
-    transform-origin: 50%;
     height: 1em;
     width: 1em;
     top: 0.35em;
-    left: 15vw;
+    left: 14vw;
     display: inline-block;
-    //vertical-align: text-top;
-   
-    
+    color: #ea4b37;
+    visibility: visible;
+}
+
+
+.vertical-border{
+    content: "";
+    position: absolute;
+    background: #b7b7b7;
+    width: 1px;
+    height: calc(100% - 9.25em);
+    top: 3.125em;
+    left: 25%;
+}
+
+
+
+
+.dropdown2{
+    position: absolute;
+    left: calc(25% + 1.5em);
+    top: 3.125em;
+    width: calc(25% - 3em);
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    visibility: visible;
+    background-color: #00609c;
+    display: flex;
+}
+.two-columns{
+    width: 50%;
+    float: right;
+    position: relative;
+}
+
+
+.right-li-section{
+    margin: 0.8em 0;
+    cursor: poointer;
 }
