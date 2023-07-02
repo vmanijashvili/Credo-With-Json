@@ -216,10 +216,8 @@
     flex-wrap: wrap;
     
 }
-.nav-li{
-    height: auto;
-    
-}
+
+
 .nav-a{
     width: 100%;
     height: 100%;
@@ -230,22 +228,43 @@
     font-family: "BPG WEB 001 Caps", sans-serif;
     font-size: 1em;
 }
+
 .nav-a:hover{
     background-color: white !important;
     color: #ea4b37 !important;
     cursor: default;
+    animation-fill-mode: forwards;
+   
 }
 .nav-a.pointer:hover{
     background-color: white;
     color: #ea4b37;
     cursor: pointer;
-}
+    
+} 
+
+
 //dropdown section
 
 //  ესაა მაუსის მიტანაზე ჩამოშლის კლასები
+.nav-li ul{
+    display: none;
+}
+
 .content ul{
     display: none;
-  }
+    
+  } 
+.nav-li:hover ul {
+    display: block;
+    position: absolute;
+    left: 11.3%;                        
+    background-color:white;
+    width: 77.41%;
+    height: 600px;
+    border-radius: 0 0 13px 13px;
+    z-index: 9;
+}
 
   .content:hover ul {
     display: block;
@@ -258,29 +277,14 @@
     z-index: 9;
     
   }
+  
   .dropdown-1{
     padding: 2.375em 3.125em;
    
  }
   // აქამდე
 
-  //ქვემოთ ჩასატანი
 
-  .list-item ul {
-    display: none !important;
-    
- }
- .list-item:hover ul{
-    //visibility: visible;
-    position: absolute;
-    left: calc(25% + 1.5em);
-    top: 3.125em;
-    width: calc(25% - 3em);
-    height: 500px;
-    box-sizing: border-box;
-    display: inline-block !important;
-    background-color:white;
- }
 
 
  .bottom-container{
@@ -362,7 +366,7 @@
     font-family: "BPG WEB 001 Caps", sans-serif;
 }
 
-// ესაამაუსის მიტანის დროს რომ გვერდით კონტენტი გაიჩითოს თავისი ფერიანად
+// ესაამაუსის მიტანის დროს რომ გვერდით კონტენტი გაიჩითოს თავის ფერიანად
 .span-text:hover{
     color: #ea4b37;
     
@@ -379,6 +383,10 @@
     background-color: #ea4b37;
 }
 
+.active-item{
+    visibility: visible;
+    opacity: 1;
+}
 
 .shared{
     background-repeat: no-repeat;
@@ -486,3 +494,41 @@
     margin: 0.8em 0;
     cursor: poointer;
 }
+
+
+
+.list-item ul {
+    display: none !important;
+    
+ }
+ .list-item:hover ul{
+    position: absolute;
+    left: calc(25% + 1.5em);
+    top: 3.125em;
+    width: calc(25% - 3em);
+    height: 500px;
+    box-sizing: border-box;
+    display: inline-block !important;
+    background-color:white;
+ }
+
+
+
+ .list-item:hover{
+    .first-list-item{
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        left: calc(25% + 1.5em);
+        top: 3.125em;
+        width: calc(25% - 3em);
+        height: 500px;
+        box-sizing: border-box;
+        display: inline-block !important;
+        background-color:white;
+    }
+ }
+ .first-list-item{
+    visibility: hidden;
+    opacity: 0;
+ }
