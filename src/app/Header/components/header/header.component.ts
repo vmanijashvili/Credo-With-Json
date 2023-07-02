@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-    isHidden: boolean = false;
-  
-    isMenuOpened: boolean = false;
+  isHidden: boolean = false;
 
-  toggleMenu(){
-    this.isMenuOpened = !this.isMenuOpened;}
+  isMenuOpened: boolean = false;
+  activeSubMenu = 'menu1';
+
+  setSubMenu = (menuId: string) => this.activeSubMenu = menuId;
+
+
+  toggleMenu = () => this.isMenuOpened = !this.isMenuOpened;
 }

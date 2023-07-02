@@ -1,6 +1,6 @@
 .general{
     Position: fixed;
-    z-index: 9999;    
+    z-index: 9999;
     width: 100%;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@
     padding: 0 3%;
     justify-content: space-between;
     background-color: white;
-    
+
 }
 
 .image-credo{
@@ -40,7 +40,7 @@
     color: #747474;
     font-size: 1rem;
     font-family: "BPG WEB 001 Caps", sans-serif;
-    
+
 }
 
 .hov:hover{
@@ -62,7 +62,7 @@
    display: grid;
    gap: 0.6rem;
    grid-template-columns: repeat(2, 1fr);
-   
+
 }
 .lang.geo{
     color:  #ea4b37;
@@ -85,7 +85,7 @@
     display: grid;
     position: relative;
     z-index: 1;
-    
+
 }
 .menu-toggler{
     top: 0;
@@ -99,7 +99,7 @@
     padding: 0.75em 0.9em;
     border-radius: 3em;
     z-index: 2;
-    
+
 }
 .menu-toggler::after{
     content: '';
@@ -131,7 +131,7 @@
     position: absolute;
     z-index: 1;
     line-height: 1.9em;
-    
+
 }
 .internet-menu{
     position: absolute;
@@ -145,7 +145,7 @@
     align-items: center;
     gap: 5px;
     position: relative;
-    
+
 }
 .pysical::before{
     content: '';
@@ -172,9 +172,9 @@
     font-size: 0.9em;
     justify-content: space-between;
     gap: 5px;
-   
+
 }
- 
+
 .legal::before{
     content: '';
     background-image: url(../../../../assets/HomeImage/arrow/bag-chanta.svg);
@@ -182,7 +182,7 @@
     width: 1em;
     background-size: cover ;
     background-repeat: no-repeat;
-    
+
 }
 .legal::after{
     content: '';
@@ -191,7 +191,7 @@
     width: 0.9em;
     background-size: cover ;
     background-repeat: no-repeat;
-    
+
 }
 
 
@@ -214,7 +214,7 @@
     height: 100%;
     padding: 0;
     flex-wrap: wrap;
-    
+
 }
 
 
@@ -229,19 +229,22 @@
     font-size: 1em;
 }
 
-.nav-a:hover{
+.content:hover {
+  .nav-a {
     background-color: white !important;
     color: #ea4b37 !important;
     cursor: default;
     animation-fill-mode: forwards;
-   
-}
-.nav-a.pointer:hover{
+
+  }
+
+  .nav-a.pointer:hover {
     background-color: white;
     color: #ea4b37;
     cursor: pointer;
-    
-} 
+
+  }
+}
 
 
 //dropdown section
@@ -253,12 +256,12 @@
 
 .content ul{
     display: none;
-    
-  } 
+
+  }
 .nav-li:hover ul {
     display: block;
     position: absolute;
-    left: 11.3%;                        
+    left: 11.3%;
     background-color:white;
     width: 77.41%;
     height: 600px;
@@ -269,18 +272,18 @@
   .content:hover ul {
     display: block;
     position: absolute;
-    left: 11.3%;                        
+    left: 11.3%;
     background-color:white;
     width: 77.41%;
     height: 600px;
     border-radius: 0 0 13px 13px;
     z-index: 9;
-    
+
   }
-  
+
   .dropdown-1{
     padding: 2.375em 3.125em;
-   
+
  }
   // აქამდე
 
@@ -347,7 +350,7 @@
 }
 
 .list-item{
-    
+
     max-width: calc(25% - 3em);
     width: max-content;
     margin: 0.8em 0;
@@ -369,7 +372,7 @@
 // ესაამაუსის მიტანის დროს რომ გვერდით კონტენტი გაიჩითოს თავის ფერიანად
 .span-text:hover{
     color: #ea4b37;
-    
+
 }
 
 .span-text:hover::before {
@@ -402,7 +405,7 @@
 }
 .photo1{
     background-image: url(https://credobank.ge/app/uploads/2018/12/fizikuri-1.jpg);
-    
+
 }
 
 .photo2{
@@ -492,16 +495,16 @@
 
 .right-li-section{
     margin: 0.8em 0;
-    cursor: poointer;
+    cursor: pointer;
 }
 
 
 
 .list-item ul {
     display: none !important;
-    
+
  }
- .list-item:hover ul{
+ .list-item:hover ul, .list-item.active ul{
     position: absolute;
     left: calc(25% + 1.5em);
     top: 3.125em;
@@ -514,7 +517,7 @@
 
 
 
- .list-item:hover{
+ .list-item:hover, .list-item.active {
     .first-list-item{
         visibility: visible;
         opacity: 1;
